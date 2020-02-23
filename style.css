@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    width: 750px;
+    height: 700px;
+}
+div { 
+    border: 1px solid;
+    height: auto; 
+}
+button {
+    height: auto;
+    width: 100px;
+    margin: 5px auto;
+    background-color: orange;
+    font-size: medium; 
+}
+header {
+    display: flex;
+    justify-content: center;  
+}
