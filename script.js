@@ -27,15 +27,34 @@ function gridBuilder(x){
 
     let cuadraditos = document.querySelectorAll("#myCell");
     cuadraditos.forEach((e)=>{
+        let passBys = 0
         e.addEventListener("mouseover", (x)=>{
-            e.style.backgroundColor = "red";
-        }) 
+            passBys = passBys + 1;
+            if(passBys < 10){    
+                e.style.backgroundColor = random_color();
+            } else { 
+                e.style.backgroundColor = "black";
+            } 
     })
-    
+    })
 }
 let cells = document.querySelectorAll("#myCell");
     cells.forEach((e)=>{
+        let passBys = 0
         e.addEventListener("mouseover", (x)=>{
-            e.style.backgroundColor = "red";
+            passBys = passBys + 1;
+            if(passBys < 10){    
+                e.style.backgroundColor = random_color();
+            } else { 
+                e.style.backgroundColor = "black";
+            }
         }) 
     })
+
+
+function random_color() {
+    let x = Math.floor(Math.random() * 256);
+    let y = Math.floor(Math.random() * 256);
+    let z = Math.floor(Math.random() * 256);
+    return "rgb(" + x + "," + y + "," + z + ")";
+};
